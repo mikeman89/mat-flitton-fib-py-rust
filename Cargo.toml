@@ -1,5 +1,5 @@
 [package]
-name = "mat-flitton-fib-py-rust"
+name = "mat_flitton_fib_py_rust"
 version = "0.1.0"
 authors = ["Michael Al Tork <michael.altork@gmail.com>"]
 edition = "2021"
