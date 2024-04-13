@@ -8,7 +8,7 @@ from setuptools_rust import Binding, RustExtension
 setup(
     name="mat-flitton-fib-py-rust",
     version="0.1",
-    rust_extensions=[RustExtension(".mat_flitton_fib_py_rust.mat_flitton_fib_py_rust",
+    rust_extensions=[RustExtension("mat_flitton_fib_py_rust.mat_flitton_fib_py_rust",
                      path="Cargo.toml",
                      binding=Binding.PyO3)],
     packages=["mat_flitton_fib_py_rust"],
