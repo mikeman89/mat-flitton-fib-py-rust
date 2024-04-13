@@ -1,1 +1,1 @@
-from mat_flitton_fib_py_rust import *
+from .mat_flitton_fib_py_rust import *
