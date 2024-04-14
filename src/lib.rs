@@ -2,13 +2,13 @@ use pyo3::prelude::*;
 
 /// Formats the sum of two numbers as string.
 #[pyfunction]
-fn sum_as_string(a: usize, b: usize) -> PyResult<String> {
-    Ok((a + b).to_string())
+fn say_hello() {
+    println!("Saying hello from Rust!")
 }
 
 /// A Python module implemented in Rust.
 #[pymodule]
 fn mat_flitton_fib_py_rust(_py: Python, m: &PyModule) -> PyResult<()> {
-    m.add_function(wrap_pyfunction!(sum_as_string, m)?)?;
+    m.add_wrapped(wrap_pyfunction!(say_hello));
     Ok(())
 }
